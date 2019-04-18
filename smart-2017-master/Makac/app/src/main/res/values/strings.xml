@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Makac</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_stopwatch">StopwatchActivity</string>
+    <string name="workoutdetail_workoutname">Training</string>
+    <string name="stopwatch_continue">Continue</string>
+    <string name="stopwatch_stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="duration">Duration</string>
+    <string name="calories">Calories</string>
+    <string name="pace">Pace</string>
+    <string name="next">Next</string>
+    <string name="share">Share</string>
+    <string name="summary">Summary</string>
+    <string name="workout_sportactivity2">Walking</string>
+    <string name="workout_sportactivity1">Running</string>
+    <string name="workout_sportactivity3">Cycling</string>
+    <string name="workout_share_comment">Hello</string>
+    <string name="go">I was out for </string>
+    <string name="track">I tracked  </string>
+    <string name="v">in </string>
+    <item name="share_message" type="id" />
+    <string name="activityType">RUN</string>
+    <string name="workout_distance_km">km</string>
+    <string name="workout_share_me">Share</string>
+    <string name="workout_share_cancel">Back</string>
+    <string name="titleSelect">Select sport</string>
+    <string name="title_activity_maps_activityd">Map</string>
+    <string name="title_activity_maps_activityg">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="duration_of_last_run">Duration of last Run</string>
+    <string name="distanceCounter" translatable="false">%.0f m</string>
+    <string name="paceCounter" translatable="false">%.0f km/h</string>
+    <string name="caloriesCounter" translatable="false">%.0f Cal</string>
+    <string name="action_settings">Settings</string>
+    <string name="map">Map</string>
+    <string name="average_speed">Average Speed</string>
+    <string name="my_runs">My Runs</string>
+    <string name="run_name" translatable="false">%s</string>
+    <string name="run_date" translatable="false">%s</string>
+    <string name="weight">Weight</string>
+    <string name="weightCounter" translatable="false">%.0f kg</string>
+    <string name="best_runs">Best runs</string>
+    <string name="general_settings">General settings</string>
+    <string name="pref_notifications">Notifications</string>
+    <string name="pref_notifications_summary">Show tray when minimized</string>
+    <string name="my_run">My run</string>
+    <string name="share_subject">Makac results</string>
+    <string name="share_text">This is how I ran</string>
+    <string name="map_style">Map style</string>
+    <string name="classic_map">Classic</string>
+    <string name="satellite_map">Satellite</string>
+    <string name="hybrid_map">Hybrid</string>
+    <string name="distance">Distance</string>
+    <string name="delete_all">Delete all runs</string>
+    <string name="delete_this_text">Do you really want to delete this run?</string>
+    <string name="delete_all_text">Do you really want to delete all runs?</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="name_this_run">Name this run</string>
+    <string name="run_saved">Run saved</string>
+    <string name="gps_data_na">GPS data not available yet</string>
+    <string name="Rude">MAGIC - Rude (Zedd Remix)</string>
+    <string name="Roses">The Chainsmokers ft  ROZES   Roses ZAXX Remix</string>
+    <string name="Runnin">Naughty Boy - Runnin (Lose It All)</string>
+    <string name="Rather">Clean Bandit - Rather Be feat. Jess Glynne</string>
+    <string name="Timber">Pitbull - Timber ft. Kesha</string>
+    <string name="DontLook">Martin Garrix feat. Usher - Dont Look Down</string>
+
+
+
+</resources>

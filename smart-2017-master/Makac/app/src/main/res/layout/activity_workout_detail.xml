@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sk.tuke.smart.makac.WorkoutDetailActivity"
+    android:background="@drawable/activitymario">
+
+    <ScrollView
+        android:id="@+id/scrollview_workoutdetail_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209">
+
+        <LinearLayout
+            android:layout_width="351dp"
+            android:layout_height="489dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_workouttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="20dp"
+                    android:padding="3dip"
+                    android:text="@string/workoutdetail_workoutname"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_activitydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="79dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/startmario"
+                    android:padding="39dip" />
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_sportactivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/button_workoutdetail_showmap"
+                    android:layout_width="77dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/map"
+                    android:padding="39dip" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="334dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_labelsummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:text="@string/summary"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="50sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_labeldistance"
+                    android:layout_width="34dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/distance"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_valuedistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.22"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_labelavgpace"
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/pace"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_valueavgpace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.36"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_labelcalories"
+                    android:layout_width="31dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/calorie"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_valuecalories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="319dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_valueduration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="50sp" />
+            </LinearLayout>
+                <TextView
+                    android:id="@+id/textview_workoutdetail_labelduration"
+                    android:layout_width="119dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="120dp"
+                    android:text="@string/duration"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="337dp"
+                android:layout_height="136dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textview_workoutdetail_labelsocialshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="48dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/button_workoutdetail_gplusshare"
+                    android:layout_width="46dp"
+                    android:layout_height="36dp"
+                    android:padding="20dip"
+                    android:layout_marginStart="-23dp"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/g" />
+
+                <Button
+                    android:id="@+id/button_workoutdetail_twittershare"
+                    android:layout_width="55dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="76dp"
+                    android:background="@drawable/twitter" />
+                <Button
+                    android:id="@+id/button_workoutdetail_emailshare"
+                    android:layout_width="50dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/mail" />
+
+
+                <Button
+                    android:id="@+id/button_workoutdetail_fbsharebtn"
+                    android:layout_width="54dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/facebook"
+                    android:padding="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

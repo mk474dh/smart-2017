@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Black"
+    tools:context="sk.tuke.smart.makac.StopwatchActivity"
+    android:background="@drawable/supermario">
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="16dp"
+        android:orientation="horizontal" />
+
+
+    <ScrollView
+        android:id="@+id/scrollview_stopwatch_content"
+        android:layout_width="335dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="351dp"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/button_stopwatch_selectsport"
+                    android:layout_width="73dp"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/sport"
+                    style="?android:attr/spinnerStyle" />
+                <Button
+                    android:id="@+id/music_play"
+                    android:layout_width="59dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="80dp"
+                    android:text="@string/play"
+                    android:textColor="@color/cardview_light_background"
+                  />
+                <Button
+                    android:id="@+id/music_pause"
+                    android:layout_width="66dp"
+                    android:layout_height="58dp"
+                    android:visibility="gone"
+                    android:layout_marginStart="80dp"
+                    android:text="@string/pause"
+                    android:textColor="@color/cardview_light_background"
+                    />
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="56dp"
+                    android:layout_height="38dp"
+                    android:text="@string/next"
+                    android:textColor="@color/cardview_light_background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="140dp">
+                <TextView
+                    android:id="@+id/textview_stopwatch_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/textview_stopwatch_distanceunit"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_stopwatch_labeldistance"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/distance"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textview_stopwatch_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="00:00:00"
+                    android:layout_marginStart="56dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="60sp"
+                    android:layout_weight="0.05" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_stopwatch_labelduration"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/duration"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textview_stopwatch_pace"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textview_stopwatch_unitpace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:layout_marginStart="10dp"
+                    android:text="min/km"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/textview_stopwatch_calories"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="29dp"
+                    android:padding="3dip"
+                    android:text="0"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textview_stopwatch_unitcalories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="kcal"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textview_stopwatch_labelpace"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:text="@string/pace"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/textview_stopwatch_labelcalories"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip"
+                    android:layout_marginStart="90dp"
+                    android:text="@string/calories"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="23sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/button_stopwatch_start"
+                    android:layout_width="73dp"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="94dp"
+                    android:background="@drawable/startmario"
+                    style="?android:attr/buttonBarButtonStyle"
+                    />
+
+                <Button
+                    android:id="@+id/button_stopwatch_endworkout"
+                    android:layout_width="73dp"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="28dp"
+                    android:visibility="gone"
+                    android:background="@drawable/deadmario"
+                    style="?android:attr/buttonBarButtonStyle"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:text="Martin Garrix feat. Usher - Dont Look Down"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="491dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
